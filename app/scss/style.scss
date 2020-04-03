@@ -141,6 +141,7 @@
         border-radius: 4px;
         transform: translateY(50%);
         position: relative;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
         &::after{
             content: ' ';
             position: absolute;
@@ -191,7 +192,33 @@
         } 
     }
 }
-
-
 //search end 
+
+//advantages start
+.advantages__items{
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 0 120px;
+}
+.advantager__item{
+    padding: 40px 40px 50px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all .4s;
+    &:hover{
+        background-color: #fff;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+    img{
+        margin-bottom: 30px;
+    }
+    &-title{
+        font-size: 24px;
+        color: #010101;
+        margin-bottom: 25px;
+    }
+}
+
+
+//advantages end
 
