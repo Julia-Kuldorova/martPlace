@@ -1,3 +1,101 @@
 @import '_vars';
 @import '_global';
 
+//header start
+
+.header{
+    &__top{
+        background-color: $bg; 
+    }
+    &__top-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        a{
+            color: #333333;
+            display: block;
+            line-height: 20px;
+            span{
+                color: $blue;
+            }
+        }
+        a.becomeSeller{
+            background-color: $blue;
+            color: #fff;
+            padding: 5px 15px;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+    &__avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 30px;
+    }
+    &__price{
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+.header__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    font-size: 15px;
+}
+.menu{
+    &__list{
+        li{
+            display: inline-block;
+            & + li{
+                margin-left: 20px;
+            }
+            
+        }
+        a{
+            color: $grey;    
+            font-weight: 500;
+        }
+    }
+}
+.header__bottom-search{
+    min-width: 360px;
+    position: relative;
+    input{
+        max-width: 360px;
+        width: 100%;
+        display: block;
+        height: 45px; 
+        padding: 0 90px 0 25px;
+        border-radius: 25px;
+        border: 1px solid #d9dfe5;
+        outline: #fff;
+    }
+    button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70px;
+        background-color: $blue;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        outline: #fff;
+    }
+}
+//header end
+
