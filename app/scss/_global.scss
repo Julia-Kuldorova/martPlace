@@ -9,6 +9,7 @@ html{
 a{
     display: inline-block;
     text-decoration: none;
+    outline: transparent;
 }
 ul,
 li{
@@ -20,11 +21,85 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     color: $text;
-     line-height: 30px;
+    line-height: 30px;
 }
 .container{
     margin: 0 auto;
     max-width: 1170px;
     padding: 0 15px;
 }
-  
+.title{
+    font-size: 30px;
+    color: #000;
+}
+.heading{
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $purple;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    outline: transparent;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.user_name{
+    padding-left: 7px;
+    font-size: 15px;
+    color: #000;
+}  
+.user__product{
+        color: $purple;
+        padding-left: 45px;
+}
+.wordpress{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/wordpress.svg);
+        width: 15px;
+        height: 15px;
+        left: 22px;
+        top: 8px;
+    }
+}
+.likes{
+    position: relative;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: $text;
+    &::before{
+        content: '\e813';
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Linearicons-Free';
+        color: $purple;
+    }
+}
+.sales{
+    position: relative;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: $blue;
+    &::before{
+        content: '\e82e';
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Linearicons-Free';
+    }
+}
