@@ -1,5 +1,6 @@
 $bg: #eef1f3;
 $bgDark: #eff1f5;
+$bgLight: #f6f7fb;
 $blue: #0674ec;
 $darkBlue: #2b4ed0;
 $purple: #7347c1;
@@ -37,4 +38,8 @@ $text: #555555;
     background-color: #f1f3f6;
     padding: 0px 15px;
     border-radius: 15px;
+    border: none;
+    outline: transparent; 
+    cursor: pointer;
+    height: 30px;
 }
