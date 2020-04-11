@@ -418,3 +418,20 @@
     padding: 0 30px;
 }
 //products end
+
+//slider bottom start
+.slider__bottom-inner{
+
+    .slick-prev{
+        @include slider__prev;
+      }
+    .slick-next{
+        @include slider__next;
+    }
+}
+.slider__bottom{
+    background-color: $bgDark;
+    padding: 120px 0 90px;
+}
+
+//slider bottom end
