@@ -435,3 +435,64 @@
 }
 
 //slider bottom end
+
+//sales-info start
+
+.sales-info{
+    background-color: #212225;
+    padding: 90px 0;
+}
+.sales-info__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.sales-info__item{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.sales-info__item--number{
+    font-size: 36px;
+    span{
+        display: block;
+        width: 165px;
+        margin-bottom: 10px;
+    }
+    .number{
+        &_1{
+            color: #feb71d;
+        }
+        &_2{
+            color: #58c9e9;
+        }
+        &_3{
+            color: #77de51;
+        }
+        &_4{
+            color: #ff6a6d;
+        }
+    }
+}
+.icon{
+    &__briefcase{
+        font-size: 48px;
+        color: #feb71d;
+    }
+    &__cloud{
+        font-size: 48px;
+        color: #58c9e9;
+    }
+    &__smile{
+        font-size: 48px;
+        color: #77de51;
+    }
+    &__members{
+        font-size: 48px;
+        color: #ff6a6d;
+    }
+}
+.sales-info__item--icon{
+    margin-bottom: 30px;
+}
+//sales-info end 

@@ -34,5 +34,48 @@ $(function(){
 
     var mixer = mixitup(".products__inner-box");
 
+    var currentNumber = $('.number').text();
 
+    
+        $(window).scroll(function() {
+            
+            if ($(this).scrollTop() > 2240) {
+            
+                    // apply effects and animations
+                    $({numberValue: currentNumber}).animate({numberValue: 38436}, {
+                        duration: 4000,
+                        easing: 'swing',
+                        step: function() { 
+                            $('.number_1').text(Math.ceil(this.numberValue)); 
+                        }
+                        });
+                    $({numberValue: currentNumber}).animate({numberValue: 3736
+                    }, {
+                        duration: 2800,
+                        easing: 'swing',
+                        step: function() { 
+                            $('.number_2').text(Math.ceil(this.numberValue)); 
+                        }
+                        });
+                    $({numberValue: currentNumber}).animate({numberValue: 2736
+                    }, {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() { 
+                            $('.number_3').text(Math.ceil(this.numberValue)); 
+                        }
+                    });
+                    $({numberValue: currentNumber}).animate({numberValue: 25736
+                    }, {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function() { 
+                            $('.number_4').text(Math.ceil(this.numberValue)); 
+                        }
+                    });
+            
+            }
+            
+            });
+            
 });
