@@ -434,6 +434,10 @@
     padding: 120px 0 90px;
 }
 
+.slider__top-arrows.arrows__buttom{
+    background-color: $blue;
+}
+
 //slider bottom end
 
 //sales-info start
@@ -496,3 +500,59 @@
     margin-bottom: 30px;
 }
 //sales-info end 
+
+//advantages bottom start 
+.advantages__bottom{
+    padding: 100px 0 70px;
+    &-inner{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    &-item{
+    text-align: center;
+    max-width: 340px;
+    margin: 15px;
+    padding: 0 30px 50px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    position: relative;
+    }
+    &-image{
+    font-size: 60px;
+    padding: 50px 0 45px;
+        
+        .lnr-license{
+            color: $blue;
+        }
+        .lnr-magic-wand{
+            color: #7f4ec2;
+        }
+        .lnr-lock{
+            color: #77de51;
+        }
+        .lnr-chart-bars{
+            color: #feb71d;
+        }
+        .lnr-leaf{
+            color: #58c9e9;
+        }
+        .lnr-phone{
+            color: #ff6a6d;
+        }
+        
+    }
+    &-smalltitle{
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    &-number{
+        position: absolute;
+        color: rgba($color: #5c87f8, $alpha: .2);
+        top: 20px;
+        left: 20px;
+        font-size: 48px;
+        font-weight: 300;
+    }
+}
+
+//advantages bottom end
