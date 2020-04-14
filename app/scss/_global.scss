@@ -75,11 +75,13 @@ body{
     background-color: $blue;
     border: none;
     cursor: pointer;
-    padding: 20px 30px;
+    padding: 22px 30px;
     border-radius: 50px;
     display: block;
     margin: 0 auto;
     outline: transparent;
+    width: 190px;
+    line-height: 0;
 }
 .avatar{
     width: 30px;
