@@ -212,3 +212,48 @@ body{
         color: #7e8fa1;
     }
 }
+.data{
+    position: relative;
+    margin-right: auto;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #999999;
+    &::before{
+        content: '\e864';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+        color: $blue;
+    }
+}
+.views{
+    position: relative;
+    padding-left: 25px;
+    font-size: 15px;
+    color: #999999;
+    &::before{
+        content: '\e81b';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+    }
+}
+.comments{
+    position: relative;
+    padding-left: 25px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: #999999;
+    &::before{
+        content: '\e83f';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+    }
+}

@@ -410,6 +410,9 @@
             background-color: #fff;
         }
 }
+.product__item-content{
+    min-height: 220px;
+}
 .product__item-info{
     display: flex;
     align-items: center;
@@ -641,3 +644,27 @@
 }
 
 //feedback end
+
+//news start
+
+.news{
+    padding: 120px 0;
+    background-color: $bgDark;
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &__item-title{
+        font-size: 22px;
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+    &__item-info{
+        justify-content: flex-end;
+    }
+}
+
+
+
+//news end
