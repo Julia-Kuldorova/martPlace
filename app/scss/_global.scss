@@ -83,6 +83,32 @@ body{
     width: 190px;
     line-height: 0;
 }
+.searchForm{
+    min-width: 360px;
+    position: relative;
+    input{
+        max-width: 360px;
+        width: 100%;
+        display: block;
+        height: 45px; 
+        padding: 0 90px 0 25px;
+        border-radius: 25px;
+        border: 1px solid #d9dfe5;
+        outline: transparent;
+    }
+    button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70px;
+        background-color: $blue;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        outline: transparent;
+    }
+}
 .avatar{
     width: 30px;
     height: 30px;
