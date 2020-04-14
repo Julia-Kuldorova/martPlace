@@ -665,6 +665,38 @@
     }
 }
 
-
-
 //news end
+
+//guarantee start
+
+.guarantee{
+    padding: 60px 0;
+    &__inner{
+        display: flex;
+        
+    }
+    &__item{
+        text-align: center;
+        width: 100%;
+        img{
+            margin-bottom: 20px;
+        }
+        
+    }
+    &__desc{
+        font-size: 24px;
+        color: #000;
+        span{
+            color: $blue;
+        }
+    }
+    &__desc-support{
+
+        span{
+            color: $purple;
+        }
+    }
+}
+
+
+//guarantee end
