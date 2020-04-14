@@ -556,3 +556,42 @@
 }
 
 //advantages bottom end
+
+//start section start 
+.start__box{
+    display: flex;
+}
+ .start__item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    width: 100%;
+    img{
+        margin-bottom: 50px;
+    }
+    .start__title{
+        color: #fff;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .start__text{
+         max-width: 600px;
+         margin: 0 auto;
+         color: #fff;
+         margin-bottom: 45px;
+    }
+    .start__btn{
+        color: $blue;
+        background-color: #fff;
+        line-height: 0;
+        padding: 22px 27px;
+        border-radius: 30px;
+        &-purple{
+            color: $purple;
+        }
+    }
+}
+
+//start section end 
