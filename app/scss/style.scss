@@ -670,8 +670,11 @@
 
 //search start
 .search{
-    background-color: $darkBlue;
+    //background-color: $darkBlue;
+    background-image: linear-gradient( -90deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);
     line-height: 15px;
+
+
     &__desc{
         text-align: center;
         color: #fff;
@@ -1201,6 +1204,9 @@
             color: #000;
         }
     }
+    .feedback__btn{
+        text-align: center;
+    }
 }
 
 //feedback end
@@ -1470,11 +1476,34 @@
     text-align: center;
     color: #999;
     span{
-        color: #fff;
         color: #ababab;
     }
 }
 //footer end
 
-
+// 404 page start
+.not__found-top{
+    background-image: linear-gradient( -90deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+}
+.not__found-title{
+    color: #fff;
+    font-size: 30px;
+}
+.not__found-top-inner{
+    padding: 50px 0;
+}
+.not__found-bottom-inner{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    img{
+        margin-bottom: 45px;
+    }
+    .not__found-text{
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 30px;
+    }
+}
+// 404 page end
 @import '_media';

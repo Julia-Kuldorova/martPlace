@@ -90,6 +90,24 @@
   .header__menu-icons{
     width: auto;
   }
+  .not__found-top-inner{
+    padding: 30px 0;
+  }
+  .not__found-bottom-inner{
+    padding: 70px 0;
+  }
+}
+@media(max-width: 580px){
+  .not__found-bottom-inner{
+    img{
+      width: 200px;
+      margin-bottom: 25px;
+    }
+    .not__found-text{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }
 @media(max-width: 530px){
   .header__top-inner{
@@ -240,6 +258,16 @@
     &::before{
       top: 2px;
       left: 10px;
+    }
+  }
+}
+@media(max-width: 400px){
+  .not__found-title{
+    font-size: 25px;
+  }
+  .not__found-bottom-inner {
+    img {
+      width: 150px;
     }
   }
 }
