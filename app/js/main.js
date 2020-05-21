@@ -32,21 +32,35 @@ $(function(){
        '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>'
     });
 
-    var mixer = mixitup(".products__inner-box");
-
-    
     var jqBar = $('#counts'); // селектор для вашего блока
     var jqBarStatus = true;
     $(window).scroll(function() {
         var scrollEvent = ($(window).scrollTop() > (jqBar.position().top - $(window).height()));
-        if (scrollEvent && jqBarStatus) { 
+        if (scrollEvent && jqBarStatus) {
             jqBarStatus = false;
             /* выполнение скрипта jqbar с определенными параметрами */
             $(".number").spincrement({
                 thousandSeparator: ",",
                 duration: 4200
-                });
+            });
         }
-        
+
     });
+
+
+    $(".header__button").on("click", function (){
+        $(".header__box").toggleClass("active");
+        $(".logo__top").toggleClass("active");
+        $(".search__icon").toggleClass("active__state2");
+    });
+    $(".search__icon").on("click", function (){
+        $(".header__form").toggleClass("active");
+        $(".menu__list-btn").toggleClass("active");
+    });
+    $(".menu__list-btn").on("click", function (){
+        $(".menu__list").slideToggle();
+    });
+
+
+    var mixer = mixitup(".products__inner-box");
 });
