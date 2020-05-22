@@ -90,7 +90,7 @@
   .header__menu-icons{
     width: auto;
   }
-  .not__found-top-inner{
+  .navigation__inner{
     padding: 30px 0;
   }
   .not__found-bottom-inner{
@@ -200,6 +200,9 @@
       border-bottom: 1px solid $text;
     }
   }
+  .terms__title{
+    padding: 25px 30px 20px 30px;
+  }
 }
 @media(max-width: 445px){
  .icon__box{
@@ -262,7 +265,7 @@
   }
 }
 @media(max-width: 400px){
-  .not__found-title{
+  .navigation__title{
     font-size: 25px;
   }
   .not__found-bottom-inner {
@@ -292,6 +295,9 @@
     &.active{
       display: none;
     }
+  }
+  .terms{
+    padding: 40px 0;
   }
 }
 @media(max-width: 360px){
