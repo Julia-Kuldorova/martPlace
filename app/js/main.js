@@ -32,20 +32,7 @@ $(function(){
        '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>'
     });
 
-    var jqBar = $('#counts'); // селектор для вашего блока
-    var jqBarStatus = true;
-    $(window).scroll(function() {
-        var scrollEvent = ($(window).scrollTop() > (jqBar.position().top - $(window).height()));
-        if (scrollEvent && jqBarStatus) {
-            jqBarStatus = false;
-            /* выполнение скрипта jqbar с определенными параметрами */
-            $(".number").spincrement({
-                thousandSeparator: ",",
-                duration: 4200
-            });
-        }
 
-    });
 
 
     $(".header__button").on("click", function (){
@@ -63,4 +50,20 @@ $(function(){
 
 
     var mixer = mixitup(".products__inner-box");
+
+    var jqBar = $('#counts'); // селектор для вашего блока
+    var jqBarStatus = true;
+    $(window).scroll(function() {
+        var scrollEvent = ($(window).scrollTop() > (jqBar.position().top - $(window).height()));
+        if (scrollEvent && jqBarStatus) {
+            jqBarStatus = false;
+            /* выполнение скрипта jqbar с определенными параметрами */
+            $(".number").spincrement({
+                thousandSeparator: ",",
+                duration: 4200
+            });
+        }
+
+    });
+
 });
