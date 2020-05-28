@@ -1505,6 +1505,7 @@
     padding: 60px 0;
     &__inner{
         background-color: #fff;
+        border-radius: 4px;
     }
     &__title{
         border-bottom: 1px solid #e8ebf0;
@@ -1570,4 +1571,101 @@
     }
 }
 //how it works end
+
+//pricing start
+
+.pricing{
+    background-color: $bgDark;
+    padding: 120px 0;
+    &__box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item{
+        background-color: #fff;
+        padding: 25px 30px 30px 30px;
+        border-radius: 4px;
+        border-top: 3px solid #ff6a6c;
+        min-width: 360px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin: 10px;
+
+        &.pricing__item-blue{
+            border-top: 3px solid #0674ed;
+            .pricing__btn{
+                background-color: #0674ed;
+            }
+        }
+        &.pricing__item-yellow{
+            border-top: 3px solid #feb71d;
+            .pricing__btn{
+                background-color: #feb71d;
+            }
+        }
+    }
+    &__title{
+        font-size: 24px;
+        border-bottom: 1px solid #e8ebf0;
+        padding-bottom: 20px;
+        text-align: center;
+        color: #000;
+        font-weight: 500;
+    }
+    &__price{
+        text-align: center;
+        font-size: 36px;
+        color: #000;
+        padding: 23px 0 30px;
+        .dollar{
+            font-size: 18px;
+            transform: translateY(-10px);
+            display: inline-block;
+        }
+        .month{
+            font-size: 16px;
+        }
+    }
+    &__btn{
+        display: block;
+        text-align: center;
+        color: #fff;
+        background-color: #ff6a6c;
+        border-radius: 4px;
+        padding: 10px 0;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+    &__list{
+        margin-bottom: 30px;
+        ul{
+            li{
+                padding: 4px 0;
+                margin-left: 20px;
+                position: relative;
+                &::before{
+                    content: ' ';
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    background-color: #c5cad4;
+                    border-radius: 50%;
+                    left: -20px;
+                    top: 17px;
+                }
+                span{
+                    color: #000;
+                    font-weight: 500;
+                }
+                .lnr{
+                    font-size: 18px;
+                    color: $text;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+//pricing end
 @import '_media';
