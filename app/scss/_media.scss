@@ -250,6 +250,28 @@
     min-width: auto;
     max-width: 310px;
   }
+  .login__text{
+    padding: 30px 25px 20px;
+  }
+  .login__form{
+    padding:35px 35px 40px;
+    form{
+      input{
+        margin-bottom: 20px;
+        max-width: 100%;
+        padding: 0 15px;
+        font-size: 14px;
+      }
+      button{
+        margin: 0 auto;
+      }
+    }
+
+    .searchForm{
+      min-width: 100%;
+    }
+  }
+
 }
 
 @media(max-width: 445px) {
