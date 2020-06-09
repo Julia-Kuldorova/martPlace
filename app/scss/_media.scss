@@ -7,6 +7,16 @@
       }
     }
   }
+  .contact-us__item{
+    margin: 0 10px 20px ;
+  }
+  .contact-us__info-box{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-us__info-box {
+    padding-bottom: 30px;
+  }
 }
 
 @media(max-width: 1000px) {
@@ -61,6 +71,15 @@
   }
   .search__icon {
     display: block;
+  }
+  .form__row{
+    flex-direction: column;
+  }
+  .contact-us__form-inner{
+    input {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
 
@@ -121,10 +140,10 @@
       width: 300px;
     }
   }
-  .pricing{
+  .pricing {
     padding: 80px 0;
   }
-  .desc__subtitle{
+  .desc__subtitle {
     margin-bottom: 30px;
   }
 }
@@ -245,30 +264,52 @@
   .how-works__box {
     margin-top: 15px;
   }
-  .pricing__item{
+  .pricing__item {
     margin: 10px 0;
     min-width: auto;
     max-width: 310px;
   }
-  .login__text{
+  .login__text {
     padding: 30px 25px 20px;
   }
-  .login__form{
-    padding:35px 35px 40px;
-    form{
-      input{
+  .login__form {
+    padding: 35px 35px 40px;
+
+    form {
+      input {
         margin-bottom: 20px;
         max-width: 100%;
         padding: 0 15px;
         font-size: 14px;
       }
-      button{
+
+      button {
         margin: 0 auto;
       }
     }
 
-    .searchForm{
+    .searchForm {
       min-width: 100%;
+    }
+  }
+  .contact-us__subtitle.navigation__inner {
+    padding: 50px 0px;
+    font-size: 20px;
+    span{
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
+  .contact-us {
+    padding: 50px 0 50px;
+  }
+  .subtitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .contact-us__form-inner{
+    .contact-us__form-title {
+      padding: 30px 40px 30px;
     }
   }
 
@@ -280,27 +321,37 @@
       display: none;
     }
   }
-  .join__title{
+  .join__title {
     margin-bottom: 10px;
     font-size: 30px;
   }
-  .join__desc{
+  .join__desc {
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .join{
+  .join {
     padding: 50px 0;
   }
-  .navigation__inner{
-    &.become__author{
+  .navigation__inner {
+    &.become__author {
       padding: 50px 0 30px;
-      .navigation__title{
+
+      .navigation__title {
         span {
           display: block;
           font-weight: 300;
           margin: 16px 0 30px;
         }
       }
+    }
+  }
+  .form__row{
+    input{
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+    textarea{
+      padding: 20px 20px;
     }
   }
 }
@@ -368,7 +419,7 @@
       width: 150px;
     }
   }
-  .pricing__item{
+  .pricing__item {
     padding: 20px;
     margin: 10px 0;
   }
@@ -385,6 +436,9 @@
     img {
       width: 280px;
     }
+  }
+  .contact-us__item {
+    padding: 30px 50px;
   }
 }
 
