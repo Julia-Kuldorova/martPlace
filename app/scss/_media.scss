@@ -459,6 +459,23 @@
   .terms {
     padding: 40px 0;
   }
+  .register__form{
+    padding: 0px 20px 35px;
+  }
+  .register__title {
+    padding: 35px 30px 30px;
+  }
+  .register__form  {
+    form{
+      button{
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .register__row-text {
+    padding-top: 25px;
+  }
 }
 
 @media(max-width: 360px) {

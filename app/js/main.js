@@ -6,6 +6,7 @@ $(function(){
         readOnly: true,
         ratedFill: "#ffc000"
     });
+
     $(".product__item--rate-star").rateYo({
         rating: 4.5,
         starWidth: "15px",
@@ -21,7 +22,6 @@ $(function(){
        '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>'
     });
 
-
     $(".slider__bottom-inner").slick({
         infinite: true,
         slidesToShow: 3,
@@ -31,9 +31,6 @@ $(function(){
      nextArrow:
        '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>'
     });
-
-
-
 
     $(".header__button").on("click", function (){
         $(".header__box").toggleClass("active");
@@ -48,6 +45,29 @@ $(function(){
         $(".menu__list").slideToggle();
     });
 
+    $(".category__full-items").on("click", function () {
+        $(".category__small-items").removeClass("active");
+        $(".category__full-items").addClass("active");
+        $(".product__item-entire-wrapper").addClass("active");
+        $(".product__item-small-wrapper").removeClass("active");
+        $(".product__item-inner").addClass("full-width");
+    })
+    $(".category__small-items").on("click", function () {
+        $(".category__full-items").removeClass("active");
+        $(".category__small-items").addClass("active");
+        $(".product__item-small-wrapper").addClass("active");
+        $(".product__item-entire-wrapper").removeClass("active");
+        $(".product__item-inner").removeClass("full-width");
+    })
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 400,
+        from: 30,
+        to: 300,
+        prefix: "$"
+    });
 
     var mixer = mixitup(".products__inner-box");
 
@@ -63,7 +83,6 @@ $(function(){
                 duration: 4200
             });
         }
-
     });
 
 });
