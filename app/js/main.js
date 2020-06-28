@@ -69,6 +69,9 @@ $(function(){
         prefix: "$"
     });
 
+    $('select.search__form-select').styler();
+
+
     var mixer = mixitup(".products__inner-box");
 
     var jqBar = $('#counts'); // селектор для вашего блока

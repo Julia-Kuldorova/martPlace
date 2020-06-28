@@ -176,7 +176,7 @@
   opacity: 0;
   position: absolute;
   top: -9999em;
-  z-index: 4;
+  z-index: 20;
   transition: opacity .2s;
   border-radius: 0px 0px 4px 4px;
 
@@ -270,7 +270,7 @@
 
 .icon__box {
   position: absolute;
-  z-index: 10;
+  z-index: 21;
 
   &:hover {
     .header__dropdown_list {
@@ -279,7 +279,7 @@
       right: -16px;
     }
 
-    z-index: 3;
+    z-index: 20;
   }
 
   .header__dropdown_list {
@@ -339,6 +339,12 @@
     color: #000;
     line-height: 22px;
 
+    .header__dropdown-name-link{
+      color: #000;
+      line-height: 22px;
+      margin-left: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
     span {
       display: block;
     }
@@ -855,34 +861,49 @@
       height: 26px;
       border-radius: 4px 4px 0 0;
     }
-
-    &-inner {
+    .search__form-line{
       position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+    .search__form-line-wrapper{
+      display: flex;
+    }
+    .search__form-line-wrapper{
+      max-width: 810px;
+      width: 100%;
+    }
+    &-inner {
+
+      select{
+        width: 190px;
+        height: 100%;
+      }
 
       input {
-        max-width: 800px;
+        max-width: 612px;
         width: 100%;
         height: 100%;
         display: block;
         height: 55px;
         border: 1px solid #dcdcdc;
-        border-radius: 3px;
+        border-radius: 3px 0px 0px 3px;
         outline: transparent;
-        padding: 0 225px 0 30px;
+        padding: 0 30px;
       }
 
       button {
-        position: absolute;
         top: 0;
         right: 0;
         color: #fff;
         background-color: $blue;
         border: none;
-        height: 100%;
-        padding: 0 65px;
+        height: 55px;
+        min-width: 220px;
         cursor: pointer;
         border-radius: 3px;
         outline: transparent;
+        margin-left: 10px;
       }
     }
   }
@@ -1028,7 +1049,7 @@
   line-height: 0;
 }
 
-//slider end 
+//slider end
 
 //products start
 .products {
@@ -1041,9 +1062,8 @@
     align-items: center;
     height: 100%;
 
-    img {
+    form{
       margin-left: 20px;
-      display: block;
     }
   }
 
@@ -1243,7 +1263,7 @@
 
 //sales-info end
 
-//advantages bottom start 
+//advantages bottom start
 .advantages__bottom {
   padding: 100px 0 70px;
 
@@ -1309,7 +1329,7 @@
 
 //advantages bottom end
 
-//start section start 
+//start section start
 .start__box {
   display: flex;
 }
@@ -1353,7 +1373,7 @@
   }
 }
 
-//start section end 
+//start section end
 
 //feedback start
 
@@ -1431,6 +1451,16 @@
   &__item-info {
     justify-content: flex-end;
   }
+  .product__item-img{
+    .product__item-img-link{
+      min-width: 360px;
+      height: 230px;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
 
 //news end
@@ -1476,7 +1506,7 @@
 //guarantee end
 
 
-//join start 
+//join start
 
 .join {
   padding: 110px 0;
@@ -1507,7 +1537,7 @@
 
 //join end
 
-//footer start 
+//footer start
 
 .footer__top {
   background-color: #262b30;
@@ -2029,13 +2059,11 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
-
+  transition: 3s all;
   button {
     background-color: transparent;
     cursor: pointer;
     border: none;
-
-
   }
 
   span {
@@ -2059,22 +2087,118 @@
 }
 
 .category__top--left {
-  max-width: 270px;
+  max-width: 470px;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .category__top-wrapper {
   display: flex;
-}
+  max-height: 45px;
+  &.category__top--left{
+    min-height: 100px;
+    .category__top--left-wrapper{
+      min-width: 270px;
+      display: flex;
+      span,a{
+        margin-right: 40px ;
+      }
+    }
+    .category__top--left-filter{
+      height: 100px;
+      max-width: 140px;
+      .jq-selectbox__dropdown ul {
+        width: 142px;
+        border: 1px solid #eceff2;
+        border-top: 1px;
+        li{
+          border-top:  1px solid #eceff2;
+        }
+      }
+      .jq-selectbox__select {
+        height: 100px;
+        max-width: 140px;
+        padding: 35px 35px 35px 30px;
+        border: 1px solid #eceff2;
+        border-left: 1px solid #eceff2;
+        border-top: none;
+        border-bottom: none;
+        position: relative;
+        box-shadow: none;
+        border-radius: 0px;
+        &::before {
+          content: "\e874";
+          font-family: 'Linearicons-Free';
+          position: absolute;
+          top: 37px;
+          right: 30px;
+          cursor: pointer;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  &.category__top-wrapper-right{
+    max-width: 670px;
+    width: 100%;
+    justify-content: space-between;
+    .category__top-wrapper-form{
+      display: flex;
+      justify-content: space-between;
+      max-width: 510px;
+      width: 100%;
 
+      .jq-selectbox__select{
+        margin-left: 30px;
+      }
+      .jq-selectbox__dropdown ul {
+        left: 30px;
+      }
+    }
+  }
+
+  .jq-selectbox__select {
+    height: 45px;
+    width: 220px;
+    padding: 7px 35px 10px 20px;
+    border: 1px solid #eceff2;
+    border-left: 1px solid #eceff2;
+    position: relative;
+    border-radius: 3px;
+  }
+  .jq-selectbox__select::before {
+    content: "\e874";
+    font-family: 'Linearicons-Free';
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .jq-selectbox__dropdown ul {
+    overflow: inherit;
+    overflow-x: inherit;
+    background-color: #fff;
+    width: 221px;
+    border: 1px solid #eceff2;
+    border-top: 1px;
+  }
+  .jq-selectbox__dropdown ul li {
+    padding: 10px 40px 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eceff2;
+  }
+
+}
 .category__top-btns {
-  display: flex;
-  align-items: center;
   border-radius: 2px;
   border: 1px solid #eceff2;
-  padding: 8px 15px;
+  padding: 11px 13px;
+  min-width: 98px;
+  max-width: 98px;
   margin-left: 30px;
+  max-height: 45px;
 }
 
 .category__wrapper {
@@ -2211,7 +2335,7 @@
   max-width: 170px;
   font-size: 15px;
   padding: 20px 30px;
-  margin: 40px auto 0;
+  margin: 50px auto 0;
   display: block;
 }
 
@@ -2678,6 +2802,12 @@
 .favorites__top-left {
   font-size: 24px;
   color: #000;
+  margin-right: 10px;
+  span{
+    color: #000;
+    display: inline-block;
+    font-weight: 500;
+  }
 }
 
 .favorites__top {
@@ -2697,6 +2827,7 @@
 
   .pagination {
     margin: 45px auto 0;
+    justify-content: center;
   }
 }
 
