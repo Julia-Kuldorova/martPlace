@@ -2099,11 +2099,18 @@
   &.category__top--left{
     min-height: 100px;
     .category__top--left-wrapper{
-      min-width: 270px;
+      max-width: 270px;
+      width: 100%;
       display: flex;
-      span,a{
-        margin-right: 40px ;
+      .new-Products__Popular-Products{
+        min-width: 270px;
+        display: flex;
+        justify-content: space-between;
       }
+      a.active{
+        color: $blue;
+      }
+
     }
     .category__top--left-filter{
       height: 100px;
@@ -2216,6 +2223,9 @@
   min-width: 260px;
   width: 100%;
   margin-right: 30px;
+  transition: .7s;
+  z-index: 20;
+ background-color: #eff1f5;
 }
 
 .category__box {
@@ -2465,7 +2475,7 @@
 
   .product__item-wrapper.product__item-entire {
     display: flex;
-    max-height: 210px;
+    min-height: 210px;
 
     .product__item-img {
       min-height: 210px;
@@ -2474,6 +2484,7 @@
 
     .product__item-img--inner {
       min-height: 210px;
+      height: 100%;
     }
 
     .product__item-img--link {
@@ -2530,6 +2541,7 @@
       text-align: center;
       justify-content: center;
       min-height: 210px;
+
       width: 100%;
       max-width: 150px;
 
@@ -2577,6 +2589,52 @@
   }
 
   display: none;
+}
+.category__content{
+  position: relative;
+}
+.category__btn{
+
+  align-items: center;
+  width: 170px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: none;
+  .category__btn-wrapper{
+    cursor: pointer;
+    padding: 10px;
+  }
+  .category__btn-row{
+    width: 30px;
+    height: 4px;
+    background: #0b0b0b;
+    margin: 3px 0;
+    transition: .2s all;
+  }
+  &.active{
+    .category__btn-row-top{
+      transform: rotate(45deg)   translate(5px);
+
+    }
+    .category__btn-row-bottom{
+      transform: rotate(-45deg)   translate(5px);
+    }
+    .category__btn-row-middle{
+      display: none;
+    }
+  }
+}
+.category__aside{
+  &.active{
+    transform: translateX(0%);
+  }
+}
+.category__box{
+  &.active{
+    transform: translateX(0%);
+    min-width: auto;
+  }
 }
 
 //category_list end

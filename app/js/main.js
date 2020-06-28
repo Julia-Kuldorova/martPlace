@@ -45,6 +45,12 @@ $(function(){
         $(".menu__list").slideToggle();
     });
 
+    $(".category__btn-wrapper").on("click", function (){
+        $(".category__aside").toggleClass("active");
+        $(".category__box").toggleClass("active");
+        $(".category__btn").toggleClass("active");
+    });
+
     $(".category__full-items").on("click", function () {
         $(".category__small-items").removeClass("active");
         $(".category__full-items").addClass("active");
