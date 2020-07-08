@@ -33,7 +33,10 @@ body {
   line-height: 30px;
   overflow-x: hidden;
 }
-
+ol{
+  padding: 0;
+  margin: 0;
+}
 .container {
   margin: 0 auto;
   max-width: 1170px;
@@ -107,6 +110,7 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   color: #000;
+  font-weight: 500;
   a{
     color: #000;
   }
@@ -116,12 +120,14 @@ body {
   color: #000;
   font-size: 20px;
   margin-bottom: 15px;
+  font-weight: 500;
   a{
     color: #000;
   }
 }
 .news__item-title{
   a{
+    font-weight: 500;
     color: #000;
   }
 }
@@ -498,4 +504,96 @@ body {
 
   }
 }
+.social-links{
+    max-height: 42px;
+  li {
+    display: inline-block;
+    max-height: 42px;
+    width: 42px;
+    & + li {
+      margin-left: 10px;
+    }
+  }
+}
+
+.link {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'icomoon';
+
+  &-facebook {
+    background-color: #395799;
+    position: relative;
+
+    &::before {
+      content: '\f09a';
+      position: absolute;
+      top: 7px;
+      left: 16px;
+    }
+  }
+
+  &-twitter {
+    background-color: #19b2f5;
+    position: relative;
+
+    &::before {
+      content: '\f099';
+      position: absolute;
+      top: 7px;
+      left: 15px;
+    }
+  }
+
+  &-google {
+    background-color: #f05b44;
+    position: relative;
+
+    &::before {
+      content: '\f1a0';
+      position: absolute;
+      top: 7px;
+      left: 14px;
+    }
+  }
+
+  &-pinterest {
+    background-color: #9c0c1c;
+    position: relative;
+
+    &::before {
+      content: '\f0d2';
+      position: absolute;
+      top: 6px;
+      left: 15px;
+    }
+  }
+
+  &-Instagram {
+    background-color: #0da6be;
+    position: relative;
+
+    &::before {
+      content: '\f0e1';
+      position: absolute;
+      top: 6px;
+      left: 14px;
+    }
+  }
+
+  &-dribble {
+    background-color: #ea4c89;
+    position: relative;
+
+    &::before {
+      content: '\f17d';
+      position: absolute;
+      top: 7px;
+      left: 15px;
+    }
+  }
+}
+
 
